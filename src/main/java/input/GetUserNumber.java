@@ -11,6 +11,7 @@ public class GetUserNumber {
     private void setInteger(){
         System.out.println("Please enter your number - ");
         this.integer = in.nextInt();
+        in.close();
 
     }
 

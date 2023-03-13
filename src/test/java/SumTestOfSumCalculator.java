@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 public class SumTestOfSumCalculator {
-    List<SumCalculator> sums;
+    SumCalculator sums;
     @BeforeEach
     public void beforeEachMethod(){
-        sums = List.of(new SumCalculator());
+        sums = new SumCalculator();
     }
 
     @Test
@@ -17,7 +17,7 @@ public class SumTestOfSumCalculator {
         //Given
         Integer n = 1;
         //When
-        Integer actual = sums.get(0).sum(n);
+        Integer actual = sums.sum(n);
         //Then
         Assertions.assertEquals(1, actual);
     }
@@ -27,7 +27,7 @@ public class SumTestOfSumCalculator {
         //Given
         Integer n = 3;
         //When
-        Integer actual = sums.get(0).sum(n);
+        Integer actual = sums.sum(n);
         //Then
         Assertions.assertEquals(6, actual);
     }
@@ -35,6 +35,6 @@ public class SumTestOfSumCalculator {
     @Test
     public void getResult_ShouldNull(){
         //Then
-        Assertions.assertThrows(IllegalArgumentException.class, ()->sums.get(0).sum(0));
+        Assertions.assertThrows(IllegalArgumentException.class, ()->sums.sum(0));
     }
 }

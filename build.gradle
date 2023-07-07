@@ -17,6 +17,11 @@ wrapper{
     gradleVersion = '7.4'
 }
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
 jar {
     manifest {
         attributes 'Main-Class': 'org.mycalc.Main'

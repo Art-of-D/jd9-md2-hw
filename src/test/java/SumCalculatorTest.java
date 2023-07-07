@@ -35,6 +35,6 @@ public class SumCalculatorTest {
     @Test
     public void getResult_ShouldNull(){
         //Then
-        Assertions.assertThrows(IllegalArgumentException.class, ()->sums.sum(0));
+        Assertions.assertThrows(IllegalArgumentException.class, () -> sums.sum(0));
     }
 }

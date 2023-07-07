@@ -25,6 +25,11 @@ jar {
     from configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
 }
 
+
 test {
+    useJUnitPlatform()
+}
+
+tasks.named('test') { Tit->
     useJUnitPlatform()
 }

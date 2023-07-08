@@ -15,10 +15,12 @@ public class GetUserNumber {
 
     }
 
+    
     public Integer getInteger() {
         return integer;
     }
 
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -27,6 +29,7 @@ public class GetUserNumber {
         return Objects.equals(integer, that.integer);
     }
 
+    
     @Override
     public int hashCode() {
         return Objects.hash(integer);

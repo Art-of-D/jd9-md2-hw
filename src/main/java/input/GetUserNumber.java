@@ -9,7 +9,7 @@ public class GetUserNumber {
         setInteger();
     }
     private void setInteger(){
-        System.out.println("Hello user!");
+        System.out.println("Hello user! Do you want to have fun?");
         System.out.println("Please enter your number - ");
         this.integer = in.nextInt();
         in.close();
